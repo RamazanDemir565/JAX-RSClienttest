@@ -1,0 +1,16 @@
+<div class='well'>
+	<h2>Products</h2>
+	<br/>
+	<div ng-repeat='product in products'>
+    	<h4><a href='#/products/{{ product.id }}'>{{ product.id }}</a></h4>
+       		<ul>
+          	<li>Name : {{ product.name }}
+          	<li>Price : {{ product.price }}
+          	<li>Brand : {{ product.brand }}
+          	<li>Description : {{ product.description }}
+	</div>
+</div>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<button type='button' class='btn btn-primary' ng-click='newProduct()'>New Product</button>
+
+
